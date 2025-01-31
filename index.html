@@ -25,6 +25,10 @@
                     colors: {
                         clifford: '#da373d',
                         'color-yellow': '#FFDC26',
+                    },
+                    fontFamily: {
+                        sora: ['Sora', 'sans-serif'],
+                        adlam: ['ADLaM Display', 'sans-serif'],
                     }
                 }
             }
@@ -32,8 +36,9 @@
     </script>
 </head>
 
-<body>
+<body class="font-sora">
     <header>
+        <!-- Navbar -->
         <nav class="bg-orange-50">
             <div class="navbar md:container mx-auto">
                 <div class="flex-1">
@@ -72,9 +77,257 @@
                 </div>
             </div>
         </nav>
+        <!-- Header -->
+        <section class="mb-1">
+            <div class="md:container mx-auto lg:flex md:flex">
+                <div class="">
+                    <h1 class="font-adlam lg:text-6xl text-3xl lg:py-5 py-4">Pamper Your Pet,<br> Because They Deserve
+                        <br> the Best
+                    </h1>
+                    <p class="lg:py-6 pb-4 opacity-70">Discover a world of treats, toys, and essentials handpicked for
+                        <br>your furry friends. Shop now and
+                        make tails wag with joy!
+                    </p>
+                    <a class="btn bg-yellow-300 mb-4">Find a Pet</a>
+                </div>
+                <div class="">
+                    <img class="w-[600px] mb-28 mt-0" src="c1-assets/cat-big.png" alt="">
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
+    <main class="">
+        <!-- Browse By Categories -->
+        <section class="md:container mx-auto mb-10">
+            <h1 class="font-adlam text-3xl mb-7">Browse By Categories</h1>
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 w-auto">
+                <div class="card bg-yellow-200 w-auto p-3 rounded-lg text-center">
+                    <div class="pt-15 w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
+                        <img src="c1-assets/dog-cartoon.png" alt="" class="rounded-xl w-10 h-10 absolute align-top" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Dog</h2>
+                        <h3>3 Items</h3>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-yellow-200 w-auto p-3 rounded-lg text-center">
+                    <div class="pt-15 w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
+                        <img src="c1-assets/cat-cartoon.png" alt="" class="rounded-xl w-10 h-10 absolute align-top" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cat</h2>
+                        <h3>3 Items</h3>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-yellow-200 w-auto p-3 rounded-lg text-center">
+                    <div class="pt-15 w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
+                        <img src="c1-assets/fish-cartoon.png" alt="" class="rounded-xl w-10 h-10 absolute align-top" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Fish</h2>
+                        <h3>3 Items</h3>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-yellow-200 w-auto p-3 rounded-lg text-center">
+                    <div class="pt-15 w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
+                        <img src="c1-assets/bird-cartoon.png" alt="" class="rounded-xl w-10 h-10 absolute align-top" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Bird</h2>
+                        <h3>3 Items</h3>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-yellow-200 w-auto p-3 rounded-lg text-center">
+                    <div class="pt-15 w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
+                        <img src="c1-assets/mouse-cartoon.png" alt="" class="rounded-xl w-10 h-10 absolute align-top" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Mouse</h2>
+                        <h3>3 Items</h3>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-yellow-200 w-auto p-3 rounded-lg text-center">
+                    <div class="pt-15 w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
+                        <img src="c1-assets/rabbit-cartoon.png" alt="" class="rounded-xl absolute" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rabbit</h2>
+                        <h3>2 Items</h3>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-orange-100 mb-10 pb-10">
+            <div class="md:container mx-auto pt-10">
+                <h1 class="font-adlam text-3xl mt-20 mb-20">Trending Pet Products</h1>
+                <div class="grid lg:grid-cols-2 ">
+                    <div class="bg-yellow-200 w-auto p-3 rounded-lg flex">
+                        <div class="items-center ">
+                            <h2 class="card-title font-adlam text-2xl">T-Shirts For Dogs</h2>
+                            <p class="opacity-70">Discover a world of treats, toys, and essentials handpicked for</p>
+                            <button class="btn bg-white-300 mb-4">Shop Now</button>
+                        </div>
+                        <div class="card-actions">
+                            <img src="c1-assets/cute-pet-mid.png" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 grid-rows-4 lg:grid-cols-3 lg:grid-rows-3 ml-5 gap-5 pt-5 pb-5 rounded-lg">
+                        <div class="bg-white border py-5">
+                            <div class="flex justify-center rounded-xl">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/dog-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border py-5">
+                            <div class="flex justify-center">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/cat-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border py-5">
+                            <div class="flex justify-center">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/fish-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border py-5">
+                            <div class="flex justify-center">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/bird-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border py-5">
+                            <div class="flex justify-center">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/rabbit-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border py-5">
+                            <div class="flex justify-center">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/mouse-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border py-5">
+                            <div class="flex justify-center">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/dog-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border py-5 ">
+                            <div class="flex justify-center">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/dog-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border py-5 hidden lg:flex">
+                            <div class="flex justify-center">
+                                <div class="items-center text-center bg-orange-50">
+                                    <img class="" src="c1-assets/dog-cartoon.png" alt="">
+                                </div>
+                                <div class="items-center mx-auto">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-star text-yellow-300"></i>
+                                        <h6 class="text-sm">4.5</h6>
+                                    </div>
+                                    <h2 class="font-adlam text-1xl">Pet Bed</h2>
+                                    <h2 class="text-sm">$39.99</h2>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="font-adlam">Everyday Low Price</h1>
+        </section>
     </main>
     <footer>
 
